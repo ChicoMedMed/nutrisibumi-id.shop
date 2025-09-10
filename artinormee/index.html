@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Presell builder by theMinerX.com -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="artinormee - Bayar Hanya Saat Menerima" />
+    <meta name="keywords" content="artinormee, Bayar Hanya Saat Menerima" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>artinormee | Bayar Hanya Saat Menerima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      :root {
+        --primary: #4194ec;
+        --primary-dark: #177ae3;
+        --secondary: #ffcc00;
+        --secondary-dark: #e6b800;
+        --accent: #25d366;
+        --accent-dark: #1ebc5c;
+        --danger: #ff4757;
+        --danger-dark: #ff2e43;
+        --light: #f9f9f9;
+        --dark: #222;
+        --gray: #888;
+        --white: #ffffff;
+        --border-radius: 12px;
+        --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        --transition: all 0.3s ease;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+      }
+
+      body.light {
+        background: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      /* ================= HEADER ================= */
+      .cod-header {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: var(--white);
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+        margin-bottom: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .cod-header-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+
+      /* ================= BADGE ================= */
+      .cod-badge {
+        background: var(--secondary);
+        color: var(--dark);
+        padding: 12px 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        margin: 20px auto;
+        max-width: 350px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.03); }
+        100% { transform: scale(1); }
+      }
+
+      /* ================= HERO ================= */
+      .cod-hero {
+        text-align: center;
+        padding: 30px 16px;
+        background: var(--white);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        margin-bottom: 30px;
+      }
+
+      .cod-hero-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: var(--primary);
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .cod-hero-subtitle {
+        font-size: 1.2rem;
+        color: var(--gray);
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .cod-hero-image {
+        max-width: 320px;
+        width: 100%;
+        border-radius: var(--border-radius);
+        margin: 20px auto;
+        transition: var(--transition);
+      }
+
+      .cod-hero-image:hover {
+        transform: translateY(-5px);
+      }
+
+      /* ================= BENEFITS ================= */
+      .cod-benefits {
+        background: var(--white);
+        padding: 40px 30px;
+        margin: 30px 0;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+      }
+
+      .cod-section-title {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: var(--primary);
+        position: relative;
+        padding-bottom: 15px;
+      }
+
+      .cod-section-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+        border-radius: 2px;
+      }
+
+      .cod-benefits-list {
+        list-style: none;
+      }
+
+      .cod-benefits-item {
+        font-size: 1.1rem;
+        margin: 16px 0;
+        padding: 16px 20px;
+        border-left: 5px solid var(--primary);
+        background: #f1f7ff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        transition: var(--transition);
+      }
+
+      .cod-benefits-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .cod-benefits-item i {
+        margin-right: 12px;
+        color: var(--primary);
+        font-size: 1.3rem;
+      }
+
+      /* ================= OFFERS ================= */
+      .cod-offers {
+        padding: 50px 16px;
+        text-align: center;
+      }
+
+      .cod-offers-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .cod-offers-item {
+        background: var(--white);
+        padding: 30px 25px;
+        border-radius: var(--border-radius);
+        width: 320px;
+        box-shadow: var(--box-shadow);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+        border: 2px solid transparent;
+      }
+
+      .cod-offers-item:hover {
+        transform: translateY(-10px);
+        border-color: var(--primary);
+      }
+
+      .cod-offers-item-popular {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: var(--white);
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border-radius: 0 0 0 10px;
+      }
+
+      .cod-offers-item-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: var(--primary);
+      }
+
+      .cod-offers-item-price-high {
+        text-decoration: line-through;
+        color: var(--gray);
+        font-size: 1rem;
+      }
+
+      .cod-offers-item-price-for {
+        font-size: 0.9rem;
+        margin: 10px 0;
+        color: var(--gray);
+      }
+
+      .cod-offers-item-price-low {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: var(--danger);
+        margin-bottom: 20px;
+      }
+
+      .cod-offers-item-saving {
+        background: #ffeaa7;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+
+      .cod-offers-item-cta-btn {
+        display: table;
+        text-decoration: none;
+        background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+        color: var(--dark);
+        border: none;
+        padding: 16px 28px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: var(--transition);
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .cod-offers-item-cta-btn:hover {
+        background: linear-gradient(135deg, var(--secondary-dark), var(--secondary));
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      /* ================= SUPPORT ================= */
+      .cod-support {
+        padding: 50px 16px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: var(--white);
+        text-align: center;
+        border-radius: var(--border-radius);
+        margin: 40px 0;
+        box-shadow: var(--box-shadow);
+      }
+
+      .cod-support-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .cod-support-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cod-support-whatsapp {
+        margin-top: 20px;
+      }
+
+      .cod-support-whatsapp-content {
+        background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+        color: var(--white);
+        padding: 18px 32px;
+        border-radius: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+        transition: var(--transition);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .cod-support-whatsapp-content:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .cod-support-whatsapp-content i {
+        margin-right: 10px;
+        font-size: 1.4rem;
+      }
+
+      /* ================= GUARANTEE ================= */
+      .cod-guarantee {
+        background: var(--white);
+        padding: 40px 30px;
+        border-radius: var(--border-radius);
+        margin: 40px 0;
+        text-align: center;
+        box-shadow: var(--box-shadow);
+      }
+
+      .cod-guarantee-icon {
+        font-size: 3rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+
+      .cod-guarantee-text {
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .capitalize {
+        text-transform: capitalize;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      /* ================= FOOTER ================= */
+      .cod-footer {
+        text-align: center;
+        padding: 30px 0;
+        color: var(--gray);
+        font-size: 0.9rem;
+        border-top: 1px solid #eee;
+        margin-top: 40px;
+      }
+      .cta{
+        cursor: pointer;
+      }
+
+      /* ================= RESPONSIVO ================= */
+      @media (max-width: 768px) {
+        .cod-hero-title {
+          font-size: 2rem;
+        }
+        
+        .cod-section-title {
+          font-size: 1.6rem;
+        }
+        
+        .cod-offers-content {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cod-offers-item {
+          width: 100%;
+          max-width: 350px;
+        }
+        
+        .cod-benefits-item {
+          font-size: 1rem;
+          padding: 14px 18px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .cod-hero-title {
+          font-size: 1.8rem;
+        }
+        
+        .cod-badge {
+          font-size: 1rem;
+          padding: 10px 15px;
+        }
+        
+        .cod-support-title {
+          font-size: 1.5rem;
+        }
+        
+        .cod-support-whatsapp-content {
+          padding: 14px 24px;
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+    <script>
+  const script = document.createElement("script");
+  script.src = "https://app.clickfastads.com.br/api/tracker/external/conversions?referer=" + encodeURIComponent(window.location.href);
+  document.head.appendChild(script);
+</script>
+
+<script src="https://app.clickfastads.com.br/api/tracker/external/visits"></script><script>
+    function click() {
+      document.getElementById("goToPage").click();
+    }
+    </script>
+    
+  </head>
+
+  <body class="light">
+    <div class="container">
+      <header class="cod-header">
+        <h1 class="cod-header-title uppercase">artinormee</h1>
+      </header>
+      
+      <div class="cod-badge cta" name="cta">
+        <i class="fas fa-truck"></i> Bayar Hanya Saat Menerima
+      </div>
+      
+      <section class="cod-hero">
+        <h1 class="cod-hero-title capitalize">Artinormee</h1>
+        <p class="cod-hero-subtitle">Dapatkan sekarang dan bayar hanya saat Anda menerima, langsung ke kurir. Dengan kata lain: tanpa risiko untuk Anda!</p>
+        <img class="cod-hero-image" src="data:image/jpeg;base64,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4XWS6WYQS0h4MnHKMytWmNB6RZSLadU1w6AWh8EjPlcZN5uqL2tcEhZ0rXUZzXub2OI8lzx8y/mPXl/i5+nJ6FwdY5tkpNfT4twbymYy104yTmevXKi8TeJnm3jI2kHAHqVTpcJLU370n2gD5iVb9A369Nmt9SD1SQCdy9HFzzk6eDyvEy4dbWDgzo7jKnGOHJZl1u1d2fcrio9gsraVNrG5DxOsqQt2uGM1BERRoREQEREBERBFtlibU6iNfv2hcqtYajdV4bRj4ZrvoiaVN4xWp7QVb3MBzAPatLrDSP2G9yL9VB1JuwdwWF1W/wD6bR6AWbLFTGTG9wT4z9/dUaNmc48lpPYPVdSyaCccahujYMTvOQ8VYQF9V2erVZ7O2m260QPjPatqIo0IiICIiDF7AcwD2qv6Y4GWS1OL3Nc15iXMcRkIGBkZDYrEimWMy+VrHPLG7xunm9t+TD+Fadz2T/k0+i4Vs+Tu2s5rWVPZfB7nAL2VFxvj4V6sfO5sfzt4Ba+DFtp86zVdzC4d7ZXqXyf6LNOzsqPaQ4tAAIggQJMHIyPBW1FePhmF3GOfycuaSZToREXZ5hERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf/2Q==">
+      </section>
+      
+      <div class="cod-badge cta" name="cta">
+        <i class="fas fa-gift"></i> Gratis Ongkir + Penjadwalan Pengiriman
+      </div>
+      
+      <section class="cod-benefits">
+        <h2 class="cod-section-title">Keuntungan Eksklusif</h2>
+        <ul class="cod-benefits-list">
+          <li class="cod-benefits-item">
+            <i class="fas fa-hand-holding-usd"></i> Bayar Hanya Saat Menerima
+          </li>
+          <li class="cod-benefits-item">
+            <i class="fas fa-shipping-fast"></i> Gratis Ongkir ke Wilayah Anda
+          </li>
+          <li class="cod-benefits-item">
+            <i class="fas fa-box-open"></i> Kemasan Tertutup dan Terlindungi
+          </li>
+          <li class="cod-benefits-item">
+            <i class="fas fa-calendar-check"></i> Jadwalkan Waktu Pengiriman Anda
+          </li>
+          <li class="cod-benefits-item">
+            <i class="fas fa-lock"></i> Pembelian Aman
+          </li>
+        </ul>
+      </section>
+      
+      <div class="cod-badge cta" name="cta">
+        <i class="fas fa-exclamation-triangle"></i> Stok Terakhir Tersedia
+      </div>
+      
+      <section class="cod-offers">
+        <h2 class="cod-section-title">Penawaran Khusus</h2>
+        <p class="cod-hero-subtitle">Penawaran Khusus Hanya Berlaku Hari Ini</p>
+        
+        <div class="cod-offers-content" id="cod-offers-content">
+        </div>
+      </section>
+      
+      <div class="cod-badge cta" name="cta">
+        <i class="fas fa-shield-alt"></i> Jaminan Kepuasan
+      </div>
+      
+      <section class="cod-guarantee">
+        <div class="cod-guarantee-icon">
+          <i class="fas fa-medal"></i>
+        </div>
+        <h2 class="cod-section-title">Jaminan Kepuasan</h2>
+        <p class="cod-guarantee-text">Jika Anda tidak sepenuhnya puas, saat menerima produk, Anda tidak perlu membayar apa pun. Tanpa pertanyaan, tanpa komplikasi. Pengembalian segera, kepuasan Anda adalah prioritas nomor satu kami.</p>
+      </section>
+      
+      <section class="cod-support">
+        <h2 class="cod-support-title">Jangan ragu untuk bertanya!</h2>
+        <p class="cod-support-subtitle">Para ahli kami siap menjawab semua pertanyaan Anda dan membantu Anda menjadwalkan pengiriman Anda sesegera mungkin!</p>
+        
+        <div class="cod-support-whatsapp" id="cod-support-whatsapp">
+          <a class="cod-support-whatsapp-content" href="https://wa.me/null" target="_blank">
+            <i class="fab fa-whatsapp"></i> Beli melalui WhatsApp
+          </a>
+        </div>
+      </section>
+      
+      <footer class="cod-footer">
+        <p>© 2025 <span class="capitalize">artinormee</span>. Semua hak dilindungi undang-undang.</p>
+        <p>Situs web ini tidak berafiliasi dengan Facebook atau entitas Facebook mana pun.</p>
+      </footer>
+    </div>
+
+    <script>
+      init = function(){
+        const offers = [{"name":"Penawaran Terbatas","price_high":"780.000","price_low":"390.000","link":"https://xi3a5.doctormurin.com/l","saving":"390.00"}];
+        const offersContent = document.getElementById('cod-offers-content');
+        offersContent.innerHTML = offers.map((offer) => {
+          return `
+            <div class="cod-offers-item">
+              <div class="cod-offers-item-title capitalize">${offer.name}</div>
+              <div class="cod-offers-item-price-high">Rp ${offer.price_high}</div>
+              <div class="cod-offers-item-price-for uppercase"><strong>Hanya dengan</strong></div>
+              <div class="cod-offers-item-price-low">Rp ${offer.price_low}</div>
+              <div class="cod-offers-item-saving">Hemat Rp ${offer.saving}</div>
+              <div class="cod-offers-item-cta">
+                <a class="cod-offers-item-cta-btn" href="${offer.link}" target="_blank">Beli Sekarang & Bayar Nanti</a>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        const supportWhatsapp = document.getElementById('cod-support-whatsapp');
+        const whatsapp = null;
+        if(whatsapp){
+          supportWhatsapp.style.display = 'block';
+        }else{
+          supportWhatsapp.style.display = 'none';
+        }
+      }
+
+      cta = function(){
+        ctas = document.getElementsByName('cta');
+        for(let i = 0; i < ctas.length; i++){
+          ctas[i].addEventListener('click', function(){
+            goToOffers();
+          });
+        }
+      }
+
+      // go to id cod-offers-content
+      goToOffers = function(){
+        offersContent = document.getElementById('cod-offers-content');
+        if (offersContent) {
+          offersContent.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+       document.addEventListener('DOMContentLoaded', () => {init(); cta();});
+    </script>
+  </body>
+</html>
